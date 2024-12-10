@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping and Visualization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="Location.js"></script>
+    <script src="Municipalities.js"></script>
+    <script src="province.js"></script>
+    <script src="District.js"></script>
+</head>
+<body>
+    <h1>Locations, Weather, and Pollution Tracker</h1>
+
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="addressInput" placeholder="Input Address" style="width: 300px;" />
+        <button id="searchAddressBtn">Search Address</button>
+    </div>
+
+    <label>
+        <input type="radio" id="weatherToggle" name="dataToggle" value="weather" />
+        Weather Forecasting
+    </label>
+    <label style="margin-left: 10px;">
+        <input type="radio" id="pollutionToggle" name="dataToggle" value="pollution" />
+        Pollution Info
+    </label>
+
+    <div id="map" style="height: 500px; width: 100%; margin-top: 10px;"></div>
+
+    <script>
+        // Initialization  the map
+        const map = L.map('map').setView([28.0, 84.0], 7);
+
+        // Adding the  base map layer
+        const baseMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Layers for  location information, municipalities, provinces, and districts
+        const locationLayer = L.geoJSON(Information, {
+            pointToLayer: (feature, latlng) => L.marker(latlng),
+            onEachFeature: (feature, layer) => {
+                const { Name, Municipality, District, Province } = feature.properties;
+                layer.bindPopup(`Name: ${Name}<br>Municipality: ${Municipality}<br>District: ${District}<br>Province: ${Province}`);
+            }
+        });
+
+        const municipalitiesLayer = L.geoJSON(Municipalities, {
+            style: () => ({ color: "red", weight: 2, fillOpacity: 0.3 }),
+            onEachFeature: (feature, layer) => {
+                const { PR_NAME, DISTRICT, LOCAL, TYPE } = feature.properties;
+                layer.bindPopup(`Province: ${PR_NAME}<br>District: ${DISTRICT}<br>Local Municipality: ${LOCAL}<br>Type: ${TYPE}`);
+            }
+        });
+
+        const provinceLayer = L.geoJSON(Province, {
+            style: () => ({ color: "green", weight: 2, fillOpacity: 0.2 }),
+            onEachFeature: (feature, layer) => {
+                const { PROVINCE_ID, PROVINCE_NAME } = feature.properties;
+                layer.bindPopup(`Province ID: ${PROVINCE_ID}<br>Province Name: ${PROVINCE_NAME}`);
+            }
+        });
+
+        const districtLayer = L.geoJSON(District, {
+            style: () => ({ color: "pink", weight: 2, fillOpacity: 0.1 }),
+            onEachFeature: (feature, layer) => {
+                const { DISTRICT } = feature.properties;
+                layer.bindPopup(`District Name: ${DISTRICT}`);
+            }
+        });
+
+        // Add layers to map by default
+        locationLayer.addTo(map);
+        municipalitiesLayer.addTo(map);
+        provinceLayer.addTo(map);
+        districtLayer.addTo(map);
+
+        // putting school icon
+        const schoolIcon = L.icon({
+            iconUrl: 'https://typeachecklist.com/wp-content/uploads/2015/08/high-school-students.jpg',  // Path to your PNG image
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32]
+        });
+
+        // Adding school layer from geojson
+        fetch('./export.geojson')
+            .then(response => response.json())
+            .then(data => {
+                const uploadedLayer = L.geoJSON(data, {
+                    pointToLayer: (feature, latlng) => L.marker(latlng, { icon: schoolIcon }),
+                    onEachFeature: (feature, layer) => {
+                        layer.bindPopup(`Feature: ${JSON.stringify(feature.properties)}`);
+                    }
+                });
+
+                uploadedLayer.addTo(map);
+
+                // Adding  to layer control
+                L.control.layers(
+                    { "Base Map": baseMap },
+                    { 
+                        "Locations": locationLayer,
+                        "Municipalities": municipalitiesLayer,
+                        "Provinces": provinceLayer,
+                        "Districts": districtLayer,
+                        "Schools in 5km": uploadedLayer
+                    }
+                ).addTo(map);
+            })
+            .catch(error => console.error('Error loading GeoJSON:', error));
+
+        // Geocoding  the functionality
+        async function fetchGeocode(address) {
+            const apiUrl = `https://geocode.maps.co/search?q=${encodeURIComponent(address)}&api_key=6754f13f7cd36422336256cwz5ac9bd`;
+            try {
+                const response = await axios.get(apiUrl);
+                if (response.data && response.data.length > 0) {
+                    return response.data[0];
+                } else {
+                    alert('No results found for the entered address.');
+                    return null;
+                }
+            } catch (error) {
+                console.error('Error fetching geocode data:', error);
+                alert('Failed to fetch geocode data. Please try again later.');
+                return null;
+            }
+        }
+
+        document.getElementById('searchAddressBtn').addEventListener('click', async () => {
+            const address = document.getElementById('addressInput').value.trim();
+            if (!address) {
+                alert('Please enter an address to search.');
+                return;
+            }
+            const geocode = await fetchGeocode(address);
+            if (geocode) {
+                const { lat, lon, display_name } = geocode;
+                L.marker([lat, lon])
+                    .addTo(map)
+                    .bindPopup(`Address: ${display_name}<br>Latitude: ${lat}<br>Longitude: ${lon}`)
+                    .openPopup();
+                map.setView([lat, lon], 14);
+            }
+        });
+
+        // Toggled weather and pollution data
+        let weatherEnabled = false, pollutionEnabled = false;
+
+        document.getElementById('weatherToggle').addEventListener('change', () => {
+            weatherEnabled = true;
+            pollutionEnabled = false;
+            alert('Weather data enabled. Click the map to fetch weather data.');
+        });
+
+        document.getElementById('pollutionToggle').addEventListener('change', () => {
+            pollutionEnabled = true;
+            weatherEnabled = false;
+            alert('Pollution data enabled. Click the map to fetch pollution data.');
+        });
+
+        // Fetching of  weather and pollution data
+        async function fetchWeatherData(lat, lon) {
+            const apiKey = 'e569c26e83e607eb7de26e5f88115100';
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather`;
+            try {
+                const response = await axios.get(apiUrl, { params: { lat, lon, appid: apiKey, units: 'metric' } });
+                const { description } = response.data.weather[0];
+                const { temp, humidity } = response.data.main;
+                return { description, temp, humidity };
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+                return null;
+            }
+        }
+
+        async function fetchPollutionData(lat, lon) {
+            const apiKey = '15494b358c4b5abfe621775958c51f9b';
+            const apiUrl = `http://api.openweathermap.org/data/2.5/air_pollution`;
+            try {
+                const response = await axios.get(apiUrl, { params: { lat, lon, appid: apiKey } });
+                const { aqi } = response.data.list[0].main;
+                const { co, no2, o3 } = response.data.list[0].components;
+                return { aqi, co, no2, o3 };
+            } catch (error) {
+                console.error('Error fetching pollution data:', error);
+                return null;
+            }
+        }
+
+        map.on('click', async (e) => {
+            const { lat, lng } = e.latlng;
+            if (weatherEnabled) {
+                const weather = await fetchWeatherData(lat, lng);
+                if (weather) {
+                    L.popup()
+                        .setLatLng([lat, lng])
+                        .setContent(`Weather: ${weather.description}<br>Temp: ${weather.temp}°C<br>Humidity: ${weather.humidity}%`)
+                        .openOn(map);
+                }
+            } else if (pollutionEnabled) {
+                const pollution = await fetchPollutionData(lat, lng);
+                if (pollution) {
+                    L.popup()
+                        .setLatLng([lat, lng])
+                        .setContent(`AQI: ${pollution.aqi}<br>CO: ${pollution.co}µg/m³<br>NO₂: ${pollution.no2}µg/m³<br>O₃: ${pollution.o3}µg/m³`)
+                        .openOn(map);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

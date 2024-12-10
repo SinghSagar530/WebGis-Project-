@@ -1,0 +1,842 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-12-09T05:50:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034143",
+        "amenity": "school",
+        "name": "Sawastika Chaudhari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5392532,
+          26.5503387
+        ]
+      },
+      "id": "node/9794034143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034144",
+        "amenity": "school",
+        "name": "Shree Janta Ma. Bi. Ramnagar Kodarkati"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5373688,
+          26.5524578
+        ]
+      },
+      "id": "node/9794034144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034145",
+        "amenity": "school",
+        "name": "Shree Sant Kabir Ra. Pra. Bi.Ramngar Kodarkati"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5377579,
+          26.5410748
+        ]
+      },
+      "id": "node/9794034145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034146",
+        "amenity": "school",
+        "name": "Nave Durga Education Academy Rauthat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5311203,
+          26.5731812
+        ]
+      },
+      "id": "node/9794034146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034147",
+        "amenity": "school",
+        "name": "Rastiy Prathamik Bidalay Rauthat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5324097,
+          26.5682297
+        ]
+      },
+      "id": "node/9794034147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034148",
+        "amenity": "school",
+        "name": "Shree Ja. G.Janta Se. School Sehara Rauthat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5301132,
+          26.5740414
+        ]
+      },
+      "id": "node/9794034148"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034149",
+        "amenity": "school",
+        "name": "Minerva English Boarding School Sehara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5304565,
+          26.5837269
+        ]
+      },
+      "id": "node/9794034149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794034164",
+        "amenity": "school",
+        "name": "श्री राष्ट्रिय प्राथमिक विद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5312729,
+          26.5930958
+        ]
+      },
+      "id": "node/9794034164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794060124",
+        "amenity": "school",
+        "name": "Shree Rastriya primary school Banaula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.6118851,
+          26.5537815
+        ]
+      },
+      "id": "node/9794060124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794060128",
+        "amenity": "school",
+        "name": "New Everest English Boarding School."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.6106083,
+          26.5457417
+        ]
+      },
+      "id": "node/9794060128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794060129",
+        "amenity": "school",
+        "name": "Shree Ma. Bi. Kabilasa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.6093903,
+          26.5456924
+        ]
+      },
+      "id": "node/9794060129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794060140",
+        "amenity": "school",
+        "name": "Shree Hira Fekani Madhyamik Vidyalaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.6141739,
+          26.5668583
+        ]
+      },
+      "id": "node/9794060140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794060144",
+        "amenity": "school",
+        "name": "Bright Angel Academy Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.614151,
+          26.5671291
+        ]
+      },
+      "id": "node/9794060144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991419715",
+        "amenity": "school",
+        "name": "Satrughan Secondary School, Nedga",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5947211,
+          26.6039896
+        ]
+      },
+      "id": "node/11991419715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991445212",
+        "amenity": "school",
+        "name": "Moon Star English Boarding School",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5939781,
+          26.6041862
+        ]
+      },
+      "id": "node/11991445212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991446310",
+        "amenity": "school",
+        "name": "Tapsi Baba Basic School, Dhanagadi",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5721422,
+          26.6007639
+        ]
+      },
+      "id": "node/11991446310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991446832",
+        "amenity": "school",
+        "name": "Shree Ma Bhagawari Primary School, Debhari",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5625426,
+          26.6044476
+        ]
+      },
+      "id": "node/11991446832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991446833",
+        "amenity": "school",
+        "name": "Janata Primary School, Madhwan",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5489385,
+          26.5924463
+        ]
+      },
+      "id": "node/11991446833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991450318",
+        "amenity": "school",
+        "name": "Shree Ishwari Hira Surat Jilebi Janta School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.572279,
+          26.5928181
+        ]
+      },
+      "id": "node/11991450318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991450510",
+        "amenity": "school",
+        "name": "Janta Basic School, Mahanauri",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.553344,
+          26.6021225
+        ]
+      },
+      "id": "node/11991450510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991464757",
+        "amenity": "school",
+        "name": "Pooja Educational Academy",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5576985,
+          26.5794699
+        ]
+      },
+      "id": "node/11991464757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991466355",
+        "amenity": "school",
+        "name": "Rastriya Primary School, Mahnauri",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5573874,
+          26.5946433
+        ]
+      },
+      "id": "node/11991466355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991471214",
+        "amenity": "school",
+        "name": "Rastriya Primary School, Gaura",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5879351,
+          26.5896545
+        ]
+      },
+      "id": "node/11991471214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991480692",
+        "amenity": "school",
+        "name": "Rastriya Primary School, Bauraha",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.599195,
+          26.5891844
+        ]
+      },
+      "id": "node/11991480692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991481836",
+        "amenity": "school",
+        "name": "Anglo Oriental School Pvt. Ltd.",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5897563,
+          26.592679
+        ]
+      },
+      "id": "node/11991481836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991481837",
+        "amenity": "school",
+        "name": "Madarsa Islamiya Salfiya Sarswor",
+        "operator": "community"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5797463,
+          26.5938038
+        ]
+      },
+      "id": "node/11991481837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991483473",
+        "amenity": "school",
+        "name": "Madarsa Aaisa Siddiquaa Sarswor",
+        "operator": "community"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5806945,
+          26.5950966
+        ]
+      },
+      "id": "node/11991483473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991521099",
+        "amenity": "school",
+        "name": "Shree Rajaji Janata Primary School, Pritampur",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5475625,
+          26.5797361
+        ]
+      },
+      "id": "node/11991521099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991529924",
+        "amenity": "school",
+        "name": "Rastriya Basic School, Khamgada",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5599516,
+          26.5711915
+        ]
+      },
+      "id": "node/11991529924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991541152",
+        "amenity": "school",
+        "name": "Madarsa Islahul Muslemin, Bhatin",
+        "operator": "community"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5699294,
+          26.5790549
+        ]
+      },
+      "id": "node/11991541152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991552961",
+        "amenity": "school",
+        "name": "Wisdom English Boarding Schol",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5623254,
+          26.5498824
+        ]
+      },
+      "id": "node/11991552961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555017",
+        "amenity": "school",
+        "name": "Mount Everest Paradise Academy",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5903437,
+          26.5746243
+        ]
+      },
+      "id": "node/11991555017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555261",
+        "amenity": "school",
+        "name": "Natai Sadai Rastriya Basic School",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5941337,
+          26.5742621
+        ]
+      },
+      "id": "node/11991555261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555262",
+        "amenity": "school",
+        "name": "Mahendra Chuni Secondary School, Manaraja",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5842095,
+          26.5555232
+        ]
+      },
+      "id": "node/11991555262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555395",
+        "amenity": "school",
+        "name": "Jiyalal Primary School",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5825304,
+          26.5754135
+        ]
+      },
+      "id": "node/11991555395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555396",
+        "amenity": "school",
+        "name": "Sunrise English Boarding School",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5873638,
+          26.5773158
+        ]
+      },
+      "id": "node/11991555396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555430",
+        "amenity": "school",
+        "name": "Chhinamasta Academy, Kachan",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5588278,
+          26.5489035
+        ]
+      },
+      "id": "node/11991555430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991555507",
+        "amenity": "school",
+        "name": "Shiva Basic School, Khadakpur",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5759992,
+          26.5320754
+        ]
+      },
+      "id": "node/11991555507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991557493",
+        "amenity": "school",
+        "name": "Sanakar Primary School",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5810472,
+          26.564424
+        ]
+      },
+      "id": "node/11991557493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991557511",
+        "amenity": "school",
+        "name": "Rastriya Primary School, Bairiyahi",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5493649,
+          26.5362604
+        ]
+      },
+      "id": "node/11991557511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991557513",
+        "amenity": "school",
+        "name": "Amraiya Public School, Khadakpur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5879217,
+          26.5369635
+        ]
+      },
+      "id": "node/11991557513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991557912",
+        "amenity": "school",
+        "name": "Rastriya Basic School, Kusmahar",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5557083,
+          26.5792828
+        ]
+      },
+      "id": "node/11991557912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991560426",
+        "amenity": "school",
+        "name": "Janata Basic School, Deuri",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5666746,
+          26.5224761
+        ]
+      },
+      "id": "node/11991560426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991562008",
+        "amenity": "school",
+        "name": "Janata Basic School, Bhatin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5678802,
+          26.5776084
+        ]
+      },
+      "id": "node/11991562008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991562250",
+        "amenity": "school",
+        "name": "Jana Kalyan Primary School, Deuri",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5653093,
+          26.5361609
+        ]
+      },
+      "id": "node/11991562250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991563532",
+        "amenity": "school",
+        "name": "Chandra Namuna School",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5817687,
+          26.5757566
+        ]
+      },
+      "id": "node/11991563532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991565978",
+        "amenity": "school",
+        "name": "Dashani Mai Primary School",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5721449,
+          26.5808779
+        ]
+      },
+      "id": "node/11991565978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991569063",
+        "amenity": "school",
+        "name": "Royal Palace Boarding School, Manraja",
+        "operator": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5844911,
+          26.558906
+        ]
+      },
+      "id": "node/11991569063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991574083",
+        "amenity": "school",
+        "name": "Janata Secondary School, Kachan",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5606195,
+          26.5453979
+        ]
+      },
+      "id": "node/11991574083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11991577269",
+        "amenity": "school",
+        "name": "Rastriya Basic School, Khadakpur",
+        "operator": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.5823641,
+          26.5370547
+        ]
+      },
+      "id": "node/11991577269"
+    }
+  ]
+}
